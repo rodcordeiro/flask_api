@@ -1,0 +1,61 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {% if title %}
+    <title>Welcome to {{ title }}</title>
+    {% else %}
+    <title>Welcome to NoWhere</title>
+    {% endif %}
+  	  <meta name="viewport" content="width=divece-width, initial-scale=1">
+
+    <link rel="home" href="C:\Users\rodrigo.cordeiro\Documents\DRIGO\HTML\Cordeiro's Universe\blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/ms-icon-310x310.png">
+    <meta property="og:site_name" content="MDN Web Docs">
+
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/estilo.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/android-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/favicon-16x16.png">
+    <link rel="manifest" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/manifest.json">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-TileImage" content="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/ms-icon-144x144.png">
+    <meta name="theme-color" content="#777">
+    <link rel="shortcut icon" href="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/fav_ImperioSith/apple-icon.png">
+
+</head>
+<body>
+    <div id="content">
+       <nav id="menu">
+          <ul>
+            <img alt="Império" src="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/SithEmblemTOR.png">
+            <li>Cordeiro's DEV.</li>
+        </ul>
+    </nav>
+<div id="anuncio">
+    {% block content %}{% endblock %}
+</div>
+    <audio autoplay>
+    <source src="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/Marcha.mp3" type="audio/mpeg">
+    <source src="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/Marcha.ogg" type="audio/ogg">
+    <source src="https://rodcordeiro.github.io/Projects/Aurebesh/Arquivos/Marcha.wav" type="audio/wav">
+    </audio>
+<footer>
+    <span>Sith Empire</span>&#174
+</footer>
+</body>
+</html>
