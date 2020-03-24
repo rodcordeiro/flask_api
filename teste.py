@@ -8,9 +8,9 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 
 
-password_provided = raw_input() # This is input in the form of a string
+password_provided = '@Drigo13' # This is input in the form of a string
 password = password_provided.encode() # Convert to type bytes
-salt = b'salt_' # CHANGE THIS - recommend using a key from os.urandom(16), must be of type bytes
+salt = os.urandom(16) # CHANGE THIS - recommend using a key from os.urandom(16), must be of type bytes
 kdf = PBKDF2HMAC(
     algorithm=hashes.SHA256(),
     length=32,
@@ -19,9 +19,9 @@ kdf = PBKDF2HMAC(
     backend=default_backend()
 )
 key = base64.urlsafe_b64encode(kdf.derive(password)) # Can only use kdf once
-
-message = "Bem vindo Mestre"
-f = Fernet(key)
+print(key)
+message = b"Bem vindo Mestre"
+f = Fernet('WOkUpdNxTlNUG_VoEkiyO9rSgNNsaQjS53iUK8_TaXM=')
 encrypted = f.encrypt(message)
 
 print(encrypted)
