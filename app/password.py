@@ -131,22 +131,14 @@ class Validacoes:
         valores += "\nTamanho: {}, {}".format(self.validaTamanho()[0],self.validaTamanho()[1])
         return [pontuacao,valores]
 
-import sys
-argumentos = sys.argv
-
-
 def password():
     passwd = Password().generate()
     validate = Validacoes(passwd).validate()
     if validate != False:
-        if "-v" in argumentos:
-            print("Generating Password")
-            print('='*10+'\n'+passwd)
-            print(validate[1])
-            print("\nPontuação: {}".format(validate[0]))
-        else:
-            print(passwd)
-            return passwd
+        return passwd
     else:
         password()
 
+
+senha = password()
+print(senha)
