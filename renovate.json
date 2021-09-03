@@ -1,5 +1,32 @@
 {
-  "extends": [
-    "config:base"
-  ]
-}
+    "branchPrefix": "updates/",
+    "packageRules": [
+      {
+        "updateTypes": ["minor", "patch", "pin", "digest"],
+        "automerge": true
+      },{
+        "updateTypes": ["major"],
+        "automerge": false
+      }
+    ],
+    "assignAutomerge":true,
+    "assignees":[
+      "rodcordeiro"
+    ],
+    "labels": ["dependencies"],
+    "postUpdateOptions":[
+      "npmDedupe",
+      "yarnDedupeFewer"
+    ],
+    "recreateClosed":true,
+    "rebaseWhen":"conflicted",
+    "vulnerabilityAlerts": {
+      "labels": ["security"],
+      "assignees": ["@rodcordeiro"]
+    },
+    "extends": [
+      "config:base",
+      ":dependencyDashboard",
+      "github>whitesource/merge-confidence:beta"
+    ]
+  }
