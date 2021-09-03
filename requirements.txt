@@ -1,5 +1,5 @@
 cffi==1.14.6
-Click==7.1.2
+Click==8.0.1
 cryptography==2.9.2
 Flask==1.1.4
 Flask-WTF==0.15.1
