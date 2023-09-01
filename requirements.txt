@@ -6,7 +6,7 @@ Flask-WTF==0.15.1
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
-pycparser==2.20
+pycparser==2.21
 python-decouple==3.4
 six==1.16.0
 Werkzeug==2.0.1
